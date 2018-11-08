@@ -1,0 +1,10 @@
+git clone, 使用ssh 
+
+產生key, 把public key copy到github
+打開Bash (其他cmder, cmd都不能用, dk why)
+
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/{sshName ex:choco}
+git clone git@github.com:{trust2065}/{aulife}.git
+
+不然就會permission deny
